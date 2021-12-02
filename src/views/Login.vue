@@ -37,43 +37,9 @@
                             <input id="passwordIput" v-model.trim="loginPassword" class="effect" placeholder="请输入密码" type="password" required autocomplete="current-password">
                             <label>密码</label>
                           </li>
-                          <!-- <li class="keep-password">
-                            <label>
-                              测试账号: admin  &nbsp; &nbsp; 密码: 123456
-                            </label>
-
-                          </li> -->
-                          <!-- <li class="keep-password">
-                            <label>
-                              <a href="https://gitee.com/anji-plus/captcha/" target="_blank" style="color:#222"><img src="https://gitee.com/static/images/logo-en.svg" style="vertical-align:middle;margin-right:5px" width="24px"> gitee</a>
-                            </label>
-
-                            <label class="ml20">
-                              <a href="https://gitee.com/anji-plus/captcha/stargazers" target="_blank"><img src="https://gitee.com/anji-plus/captcha/badge/star.svg?theme=gvp" style="vertical-align:middle;" alt="star"></a>
-                            </label>
-
-                          </li> -->
-                          <!-- <li class="keep-password">
-                            <label>
-                              <a href="https://github.com/anji-plus/captcha" target="_blank" style="color:#222">
-                                <img
-                                  src="https://github.githubassets.com/favicons/favicon.png"
-                                  style="vertical-align:middle;margin-right:5px"
-                                  width="24px"
-                                > github</a>
-                            </label>
-                            <label class="ml20">
-                              <a href="https://github.com/anji-plus/captcha/stargazers" target="_blank">
-                                <img
-                                  src="https://img.shields.io/github/stars/anji-plus/captcha?style=social"
-                                  style="vertical-align:middle;"
-                                  alt="star"
-                                ></a>
-                            </label>
-                          </li> -->
                           <li class="mt50">
-
-                            <el-button class="buttonSize button-solid goHome" type="primary" @click="checkPrama">
+                            <!-- <el-button class="buttonSize button-solid goHome" type="primary" @click="checkPrama"> -->
+                            <el-button class="buttonSize button-solid goHome" type="primary" @click="login">
                               登&nbsp;&nbsp;录</el-button>
                           </li>
                         </ul>
@@ -117,6 +83,12 @@ export default {
   created() {
     document.addEventListener('keyup', this.handerKeyup)
   },
+  methods: {
+    login() {
+      let _this = this;
+      _this.$router.push("/home");
+    }
+  }
   // methods: {
   //   handerKeyup(e) {
   //     var keycode = document.all ? event.keyCode : e.which

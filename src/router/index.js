@@ -33,12 +33,18 @@ const Record = {
   component: () => import('../views/Record')
 };
 
+const Person = {
+  path: '/person',
+  component: () => import('../views/Person')
+};
+
 const routes = [
   DefaultPage,
   Home,
   Login,
   About,
   Record,
+  Person
   // NotFound,
 ];
 

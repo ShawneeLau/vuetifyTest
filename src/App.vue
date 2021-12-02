@@ -1,15 +1,5 @@
 <template>
-  <v-app>
-    
-    <!-- <transition name="router-fade" mode="out-in">
-      <keep-alive>
-        <router-view v-if="$route.meta.keepAlive"></router-view>
-      </keep-alive>
-    </transition>
-    <transition name="router-fade" mode="out-in">
-      <router-view v-if="!$route.meta.keepAlive"></router-view>
-    </transition> -->
-  
+  <v-app>  
     <v-app-bar
       app
       flat
@@ -20,7 +10,7 @@
       <NavBar />
     </v-app-bar>
     <!--  这里偷懒把抽屉直接写在App里了，更好的做法是写成一个组件用vuex控制，whatever  -->
-    <!-- <v-navigation-drawer
+    <v-navigation-drawer
       v-model="drawer"
       temporary
       class="white"
@@ -52,7 +42,7 @@
           </v-list-item-content>
         </v-list-item>
       </v-list>
-    </v-navigation-drawer>  -->
+    </v-navigation-drawer> 
     <v-main>
       <router-view />
       <Footer v-if="!is_login"/>
@@ -77,6 +67,7 @@
         { title: 'Home', icon: 'mdi-folder', path: '/home' },
         { title: 'Message', icon: 'mdi-folder', path: '/record' },
         { title: 'About', icon: 'mdi-folder', path: '/about' },
+        { title: 'Person', icon: 'mdi-folder', path: '/person' },
       ],
       is_login: true,
     }),
