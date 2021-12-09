@@ -86,7 +86,7 @@ export default {
   methods: {
     login() {
       let _this = this;
-      _this.$router.push("/home");
+      _this.$router.push("/current");
     }
   }
   // methods: {

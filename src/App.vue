@@ -9,40 +9,7 @@
 
       <NavBar />
     </v-app-bar>
-    <!--  这里偷懒把抽屉直接写在App里了，更好的做法是写成一个组件用vuex控制，whatever  -->
-    <v-navigation-drawer
-      v-model="drawer"
-      temporary
-      class="white"
-      app
-    >
-      <v-list
-        class="py-0"
-      >
-        <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title>Menu</v-list-item-title>
-            <v-list-item-subtitle>Vuetify-Photo</v-list-item-subtitle>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-divider />
-
-        <v-list-item
-          v-for="item in items"
-          :key="item.path"
-          :to="item.path"
-        >
-          <v-list-item-icon>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-item-icon>
-
-          <v-list-item-content>
-            <v-list-item-title>{{ item.title }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer> 
+    
     <v-main>
       <router-view />
       <!-- <Footer v-if="!is_login"/> -->

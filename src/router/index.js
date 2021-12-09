@@ -23,6 +23,36 @@ const Login = {
   component: () => import('../views/Login')
 };
 
+// 当前用电量
+const Current = {
+  path: '/current',
+  component: () => import('../views/Current')
+};
+
+// 历史用电量
+const History = {
+  path: '/history',
+  component: () => import('../views/History')
+};
+
+// 历史账单
+const Bill = {
+  path: '/bill',
+  component: () => import('../views/Bill')
+};
+
+// 在线充值
+const Topup = {
+  path: '/topup',
+  component: () => import('../views/Topup')
+};
+
+// 电表事件列表
+const Event = {
+  path: '/event',
+  component: () => import('../views/Event')
+};
+
 const About = {
   path: '/about',
   component: () => import('../views/About')
@@ -44,7 +74,12 @@ const routes = [
   Login,
   About,
   Record,
-  Person
+  Person,
+  Current,
+  History,
+  Bill,
+  Topup,
+  Event,
   // NotFound,
 ];
 

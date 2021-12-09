@@ -5,11 +5,11 @@
       color="grey lighten-4"
     >
       <v-toolbar-title>
-        最终客户页面
+        个人智能电表管理系统
       </v-toolbar-title>
       <v-spacer />
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn :to="item.path" text v-for="item in tabs">{{ item.tab }}</v-btn>
+        <v-btn :to="item.path" text v-for="item in tabs" v-bind:key="item.path">{{ item.tab }}</v-btn>
       </v-toolbar-items>
       <PersonInfo />
     </v-toolbar>
@@ -26,12 +26,12 @@
     data() {
       return {
         tabs: [
-          { path: '/home', tab: '首页曲线图形展示' },
-          { path: '/record', tab: '历史用电量' },
-          { path: '/about', tab: '历史账单' },
-          { path: '/about', tab: '在线充值' },
-          { path: '/about', tab: '电表事件列表' },
-          { path: '/person', tab: '个人信息' },
+          { path: '/current', tab: '当前用电量' },
+          { path: '/history', tab: '历史用电量' },
+          { path: '/bill', tab: '历史账单' },
+          { path: '/topup', tab: '在线充值' },
+          { path: '/event', tab: '电表事件列表' },
+          // { path: '/person', tab: '个人信息' },
         ]
       }
     }
