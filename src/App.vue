@@ -45,7 +45,7 @@
     </v-navigation-drawer> 
     <v-main>
       <router-view />
-      <Footer v-if="!is_login"/>
+      <!-- <Footer v-if="!is_login"/> -->
     </v-main>
   </v-app>
 </template>

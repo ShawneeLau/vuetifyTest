@@ -26,11 +26,12 @@
     data() {
       return {
         tabs: [
-          { path: '/home', tab: 'Home' },
-          { path: '/record', tab: 'Record' },
-          { path: '/about', tab: 'About' },
-          { path: '/person', tab: 'Person' },
-          { path: '/about', tab: 'About' },
+          { path: '/home', tab: '首页曲线图形展示' },
+          { path: '/record', tab: '历史用电量' },
+          { path: '/about', tab: '历史账单' },
+          { path: '/about', tab: '在线充值' },
+          { path: '/about', tab: '电表事件列表' },
+          { path: '/person', tab: '个人信息' },
         ]
       }
     }
