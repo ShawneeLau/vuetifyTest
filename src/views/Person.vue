@@ -14,7 +14,7 @@
             <v-row>
               <v-col>
                 <v-card class="pa-2" :flat="true">
-                  <label class="label"><strong>用户名</strong></label>
+                  <label class="label"><strong>账号</strong></label>
                   <span class="label-value" v-html="userName"></span>
                 </v-card>
               </v-col>
@@ -32,11 +32,13 @@
             <v-row>
               <v-col>
                 <v-card class="pa-2" :flat="true">
-                  <label class="label"><strong>家庭住址</strong></label>
+                  <label class="label"><strong>地址</strong></label>
                   <span class="label-value" v-html="address"></span>
                 </v-card>
               </v-col>
+            </v-row>
 
+            <v-row>
               <v-col>
                 <v-card class="pa-2" :flat="true">
                   <label class="label"><strong>电话</strong></label>
