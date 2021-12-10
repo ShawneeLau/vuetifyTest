@@ -30,7 +30,7 @@
           { path: '/record', tab: 'Record' },
           { path: '/about', tab: 'About' },
           { path: '/person', tab: 'Person' },
-          { path: '/about', tab: 'About' },
+          // { path: '/about', tab: 'About' },
         ]
       }
     }
